@@ -7,5 +7,92 @@
 		<link rel="stylesheet" href="./css/main.min.css" />
 		<title>Document</title>
 	</head>
-	<body></body>
+	<body>
+		<!-- table section -->
+		<section class="table">
+			<div class="container">
+				<table class="table">
+					<thead>
+						<tr>
+							<th rowspan="2">No</th>
+							<th rowspan="2">Client</th>
+							<th rowspan="2">Tovar</th>
+							<th rowspan="2">Status</th>
+							<th colspan="2">Umumiy xarajatlar</th>
+						</tr>
+						<tr>
+							<th>Xizmat xar.</th>
+							<th>Yo'l xar.</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>2</td>
+							<td>Ibrohim Ali</td>
+							<td>Gilam</td>
+							<td>Yuvishda</td>
+							<td>300.000</td>
+							<td>140.000</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Shuhratbek</td>
+							<td>Parda</td>
+							<td>Quritishda</td>
+							<td>200.000</td>
+							<td>10.000</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>Farrux</td>
+							<td>Sholcha</td>
+							<td>Yetkazishda</td>
+							<td>240.000</td>
+							<td>5.000</td>
+						</tr>
+
+						<tr>
+							<td colspan="4">Jami</td>
+							<td colspan="2">1.000.000</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+
+		<!-- retina section -->
+
+		<section class="retina">
+			<div class="container">
+				<div class="box">
+					<!-- <h3>retina ekranga htmlda moslashtirish</h3> -->
+					<img
+						class="box_img"
+						src="./images/expresso.png"
+						srcset="
+							./images/expresso.png    1x,
+							./images/expresso@2x.png 2x
+						"
+						alt="expresso coffe picture"
+						width="255"
+						height="193"
+					/>
+				</div>
+
+				<div class="box2">
+					<!-- bu esa cssda berilishi -->
+				</div>
+			</div>
+		</section>
+
+		<form action="#" method="post">
+			<h2 class="form_header header--active">qaysi birini tanlaysiz?</h2>
+			<div class="input_controller">
+				<input type="text" />
+				<input type="text" />
+				<input type="text" />
+			</div>
+		</form>
+	</body>
 </html>

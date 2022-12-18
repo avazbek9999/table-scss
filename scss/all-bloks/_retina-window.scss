@@ -1,0 +1,36 @@
+.retina .container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.box2 {
+	text-align: center;
+	width: 300px;
+	height: 400px;
+	border: 1px solid #333;
+	background-image: url(../images/expresso.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 255px 193px;
+}
+
+.input_controller {
+	display: none;
+}
+
+.header--active + .input_controller {
+	display: block;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min--moz-device-pixel-ratio: 2),
+	only screen and (-o-min-device-pixel-ratio: 2/1),
+	only screen and (min-device-pixel-ratio: 2),
+	only screen and (min-resolution: 192dpi),
+	only screen and (min-resolution: 2dppx) {
+	.box2 {
+		background-image: url('../images/expresso@2x.png');
+	}
+}
